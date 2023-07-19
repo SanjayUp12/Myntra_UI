@@ -13,7 +13,10 @@ class AllTimeFavouritesCardWidget extends StatelessWidget {
         Column(
           children: [
             Container(
-              width: 100,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey),
+              ),
+              width: 170,
               height: 100,
               child: Image(
                 fit: BoxFit.fill,
@@ -29,7 +32,10 @@ class AllTimeFavouritesCardWidget extends StatelessWidget {
         Column(
           children: [
             Container(
-              width: 100,
+              decoration: BoxDecoration(
+                border: Border.all(color: Colors.grey),
+              ),
+              width: 170,
               height: 100,
               child: Image(
                 fit: BoxFit.fill,

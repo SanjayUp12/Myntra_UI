@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:myntra_task1/screens/myntra_drawer.dart';
 import 'package:myntra_task1/screens/all_time_favourite_card.dart';
+import 'constants.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -18,7 +19,7 @@ class HomePage extends StatelessWidget {
               color: Colors.red,
             ),
             SizedBox(
-              width: 220,
+              width: 200,
             ),
             Icon(
               Icons.search,
@@ -112,8 +113,9 @@ class HomePage extends StatelessWidget {
               ),
               Text(
                 'ALL TIME FAVOURITES',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                style: kAllTimeFavouriteStyle,
               ),
+              SizedBox(height: 20),
               AllTimeFavouritesCardWidget(
                 dressNo: 1,
                 dressText1: 'Lehenga',
@@ -124,10 +126,22 @@ class HomePage extends StatelessWidget {
                 dressText1: 'Sherwani',
                 dressText2: 'Suit',
               ),
+              AllTimeFavouritesCardWidget(
+                dressNo: 5,
+                dressText1: 'Coat',
+                dressText2: 'Pant',
+              ),
+              SizedBox(
+                height: 20,
+                child: Container(color: Colors.grey.shade100),
+              ),
               Text(
                 'Highlights of the day',
                 textAlign: TextAlign.left,
-                style: TextStyle(color: Colors.black, fontSize: 17),
+                style: TextStyle(color: Colors.black, fontSize: 20),
+              ),
+              SizedBox(
+                height: 20,
               ),
               Row(
                 children: [
